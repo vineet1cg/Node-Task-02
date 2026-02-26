@@ -47,7 +47,9 @@ const products = [
     rating: 4.1,
   },
 ];
-
+app.get('/',(req,res)=>{
+  res.status(200).json({message:"API WORKING :D "});
+})
 app.get("/products", (req, res) => {
   res.status(200).json(products);
 });
